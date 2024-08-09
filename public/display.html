@@ -60,7 +60,7 @@
           const email = $(this).data('email');
           $.ajax({
             type: 'GET',
-            url: `https://your-backend-url.com/api/users/${email}`,
+            url: `https://socket-n310.onrender.com/api/users/${email}`,
             success: function (user) {
               let userDetails = `<p>Email: ${user.emailId}</p>`;
               userDetails += `<p>Name: ${user.firstName} ${user.lastName}</p>`;
