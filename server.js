@@ -13,11 +13,11 @@ const server = http.createServer(app);
 const io = socketIO(server);
 
 connectDB();
-// app.use(
-//   cors({
-//     origin: "https://socket-live-user.onrender.com",
-//   })
-// );
+ app.use(
+   cors({
+     origin: "https://socket-n310.onrender.com",
+   })
+ );
 
 app.use(cors());
 app.use(bodyParser.json());
